@@ -8,12 +8,15 @@ imap jj <Esc>
 
 " local replace
 nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+" global replace
+nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
 set showmatch " match braces/parenthesis
 set smartcase
 set hlsearch " highlight search matches
 " remove highlighting from search results
 nnoremap <C-L> :nohlsearch<CR>
+
 set ruler
 set wildmenu " horizontal menu for file autocomplete
 set ignorecase " only case sensitive when searching with uppercase
