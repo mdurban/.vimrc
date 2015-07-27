@@ -6,6 +6,9 @@ colorscheme 0x7A69_dark " syntax coloring
 " map jj to switch modes
 imap jj <Esc>
 
+" local replace
+nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
+
 set showmatch " match braces/parenthesis
 set smartcase
 set hlsearch " highlight search matches
