@@ -36,3 +36,5 @@ nmap <silent> <C-B> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=30
 autocmd VimEnter * NERDTree " start NERDTree on startup
 autocmd VimEnter * wincmd p " start with cursor in file
+
+let g:ctrlp_working_path_mode = 0 " search for files everywhere
