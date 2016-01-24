@@ -3,6 +3,11 @@ execute pathogen#infect()
 syntax enable " syntax highlighting
 colorscheme 0x7A69_dark " syntax coloring
 
+filetype plugin indent on " clojure plugins require this
+
+" map , to be <leader> key. i.e. ,cc will comment out line
+let mapleader=","
+
 " map jj to switch modes
 imap jj <Esc>
 
@@ -34,7 +39,10 @@ set si
 
 nmap <silent> <C-B> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=30
-autocmd VimEnter * NERDTree " start NERDTree on startup
-autocmd VimEnter * wincmd p " start with cursor in file
+" autocmd VimEnter * NERDTree " start NERDTree on startup
+" autocmd VimEnter * wincmd p " start with cursor in file
 
-let g:ctrlp_working_path_mode = 0 " search for files everywhere
+filetype plugin on " NERDCommenter
+
+let g:ctrlp_working_path_mode = 0 " search for files ever ywhere
+
