@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Add styling to shell for easier readability
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$"
+export SCALA_HOME=/usr/local/share/scala
+
+# Aliases for efficiency and functionality
+alias hgrep="history | grep"
+alias psgrep="ps aux | grep "
+alias gcb="gradle clean build"
+alias gct="gradle clean test"
+alias cb="git checkout -b"
