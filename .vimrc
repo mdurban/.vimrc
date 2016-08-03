@@ -21,6 +21,8 @@ set smartcase
 set hlsearch " highlight search matches
 " remove highlighting from search results
 nnoremap <C-L> :nohlsearch<CR>
+" toggle paste to avoid vims awesome indendation
+set pastetoggle=<C-K>
 
 set ruler
 set wildmenu " horizontal menu for file autocomplete
