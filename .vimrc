@@ -16,6 +16,9 @@ nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 " global replace
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
 
+" Disable Ex mode
+nnoremap Q <nop>
+
 set showmatch " match braces/parenthesis
 set smartcase
 set hlsearch " highlight search matches
