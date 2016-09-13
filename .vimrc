@@ -1,7 +1,7 @@
 execute pathogen#infect()
 
 syntax enable " syntax highlighting
-colorscheme 0x7A69_dark " syntax coloring
+colorscheme candycode " 0x7A69_dark, ChasingLogic, SlateDark
 
 filetype plugin indent on " clojure plugins require this
 
@@ -32,12 +32,13 @@ set wildmenu " horizontal menu for file autocomplete
 set ignorecase " only case sensitive when searching with uppercase
 
 set number " line numbering
-highlight LineNr ctermfg=red
+set relativenumber " line numbering
+highlight LineNr ctermfg=gray " line color
 
 set smarttab
-set shiftwidth=4
-set tabstop=4 " number of spaces per tab
-set softtabstop=4 " number of spaces per tab when <TAB> is hit
+set shiftwidth=2 " how many columns text is indented with the reindent operations << and >>
+set tabstop=2 " number of spaces per tab
+set softtabstop=2 " number of spaces per tab when <TAB> is hit
 set expandtab " turn tabs into spaces
 set ai " autoindent
 set si
