@@ -10,7 +10,8 @@ export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\[\033[m\]\$
 
 # Aliases for efficiency and functionality
 alias hgrep="history | grep"
-alias psgrep="ps aux | grep "
 alias gcb="gradle clean build"
 alias gct="gradle clean test"
 alias cb="git checkout -b"
+
+set -o vi
