@@ -1,0 +1,9 @@
+# Remap ESC to use my double 'j' keypress to toggle insert or movement
+# mode.
+#
+$if mode=vi
+    set keymap vi-command
+    "jj": vi-insertion-mode
+    set keymap vi-insert
+    "jj": vi-movement-mode
+$endif
